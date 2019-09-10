@@ -1,0 +1,28 @@
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+
+.re{
+	position: relative;
+}
+.ab{
+	position: absolute;
+}
+
+.wt{
+	width: 1300px;
+}
+.bo{
+	border: 2px dashed #0080aa;
+}
+.th{
+	height: 165px;
+}
+
+.bg{
+	background: rgba(80,80,0,0.4);
+}
+

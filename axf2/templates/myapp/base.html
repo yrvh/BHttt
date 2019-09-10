@@ -1,0 +1,56 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> myapp base页面</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,
+        maximum-scala=1.0,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/swiper.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/mei_reset.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/base.css' %}"/>
+
+    <script type="text/javascript" charset="utf-8" src="{% static 'base/js/jquery-3.4.1.min.js' %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static 'base/js/bootstrap.js' %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static 'base/js/swiper.js' %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static 'base/js/base.js' %}"></script>
+{#    <script type="text/javascript" charset="utf-8" src="{% static 'base/js/' %}"></script>#}
+
+    {% block linkscript %}
+    {% endblock %}
+</head>
+<body>
+    <header></header>
+    <div>
+        {% block base %}
+        {% endblock %}
+    </div>
+    <footer>
+        <a class="home" href="/home/">
+            <dl>
+                <dt><span></span></dt>
+                <dd>主页</dd>
+            </dl>
+        </a>
+        <a class="market" href="/market/">
+            <dl>
+                <dt><span></span></dt>
+                <dd>闪送超市</dd>
+            </dl>
+        </a>
+        <a class="cart" href="/cart/">
+            <dl>
+                <dt><span></span></dt>
+                <dd>购物车</dd>
+            </dl>
+        </a>
+        <a class="mine" href="/mine/">
+            <dl>
+                <dt><span></span></dt>
+                <dd>我的</dd>
+            </dl>
+        </a>
+    </footer>
+</body>
+</html>

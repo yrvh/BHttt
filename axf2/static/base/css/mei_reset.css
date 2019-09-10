@@ -1,0 +1,53 @@
+@charset "utf-8";
+#chart{
+	display: block;
+	position: absolute;
+	left: 0;
+	/*top: 0;*/
+}
+
+html{
+	color: #fff;
+}
+
+body,div, h1, h2, h3, p, blockquote,
+dl, dt, dd, ul, ol, li, 
+fieldset, button, input, textarea, form,
+th, td { 
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+em,strong,b,u,i{
+	font-style: normal;
+	font-weight: normal;
+}
+
+ul, ol { list-style: none; }
+
+h1,h2,h3{
+	font-size: 100%;
+	font-weight: normal;
+}
+
+input,textarea,select{
+	font-family:inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	*font-size: 100%;
+}
+img{
+	border: none;
+}
+input{
+	border:none;
+}
