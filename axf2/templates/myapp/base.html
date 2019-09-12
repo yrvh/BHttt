@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> myapp base页面</title>
+    <title> {{ title }}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,
         maximum-scala=1.0,user-scalable=0">
     <link rel="stylesheet" type="text/css" href="{% static 'base/css/bootstrap.min.css' %}"/>
@@ -22,30 +22,32 @@
 </head>
 <body>
     <header></header>
+
     <div>
         {% block base %}
         {% endblock %}
     </div>
+
     <footer>
-        <a class="home" href="/home/">
+        <a class="home" href="{% url 'myapp:home'%}">
             <dl>
                 <dt><span></span></dt>
                 <dd>主页</dd>
             </dl>
         </a>
-        <a class="market" href="/market/">
+        <a class="market" href="{% url 'myapp:market'%}">
             <dl>
                 <dt><span></span></dt>
                 <dd>闪送超市</dd>
             </dl>
         </a>
-        <a class="cart" href="/cart/">
+        <a class="cart" href="{% url 'myapp:cart'%}">
             <dl>
                 <dt><span></span></dt>
                 <dd>购物车</dd>
             </dl>
         </a>
-        <a class="mine" href="/mine/">
+        <a class="mine" href="{% url 'myapp:mine'%}">
             <dl>
                 <dt><span></span></dt>
                 <dd>我的</dd>

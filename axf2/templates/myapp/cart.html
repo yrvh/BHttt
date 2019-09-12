@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>cart 页面</title>
-</head>
-<body>
+{% extends 'myapp/base.html' %}
+{% load static from staticfiles %}
 
-</body>
-</html>
+
+
+
+{% block linkscript %}
+    <link rel="stylesheet" type="text/css" href="{% static 'cart/css/cart.css' %}"/>
+    <script type="text/javascript" charset="utf-8" src="{% static 'cart/js/cart.js' %}"></script>
+{% endblock %}
+
+{% block base %}
+    <h1>asdhfoawh7</h1>
+    <h1>asdhfoawh34</h1>
+    <h1>asdhfo234</h1>
+    <h1>百湖</h1>
+    <h1>桃花影下飞神剑7</h1>
+    <h1>碧海潮升按玉箫</h1>
+    <h1>海内</h1>
+    <h1>cart</h1>
+{% endblock %}
